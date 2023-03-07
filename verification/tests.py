@@ -57,7 +57,7 @@ TESTS = {
             ], 'A', 'D'],
             "answer": 25,
             "explanation": "A->B(10)->D(15) || A->C(15)->D(10)"
-        }
+        },
     ],
     "Extra": [
         {
@@ -72,6 +72,6 @@ TESTS = {
             ], 'A', 'F'],
             "answer": 40,
             "explanation": "A->B(10)->D(15)->E(5)->F(10)"
-        }
+        },
     ]
 }
