@@ -1,0 +1,47 @@
+<!-- Describe task in general -->
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}flight.jpg" alt="example" style="max-height: 300px"/>
+</p>
+<p><i>"Wir müssen so billig wie möglich nach Hause fliegen, damit mehr Geld für Geschenke übrig bleibt. Tante Lidia hat um verschiedene Käsesorten gebeten und Vasia wollte ein neues Spielzeugauto. Ich schaue mir den Flugplan schon eine ganze Weile an und ich glaube langsam, dass einige Flugzeuge umsonst fliegen".</i></p>
+
+<p>Als Eingabe erhalten Sie den Flugplan als {% if is_js %}array{% else %}list{% endif %}, wobei jedes Element der Preis für einen Direktflug zwischen 2 Städten ist ({% if is_js %}array{% else %}list{% endif %} aus 3 Elementen - 2 Städtenamen als String und ein Flugpreis).</p>
+
+<p>Die Flugzeuge fliegen in beide Richtungen und der Preis ist in beiden Richtungen derselbe. Es besteht die Möglichkeit, dass es keine Direktflüge zwischen den Städten gibt.</p>
+
+<p>Finden Sie den Preis des günstigsten Fluges zwischen den Städten, die als 2. und 3. Argument angegeben sind. Falls der Flug nicht durchgeführt werden kann, geben Sie 0 zurück.</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> 3 Argumente: der Flugplan als {% if is_js %}ein Array von Arrays{% else %}eine Liste von Listen{% endif %}, Abflugstadt und Zielstadt als Strings.
+ </p>
+
+<p>
+   <strong>Ausgabe:</strong> Der beste Preis als {% if is_js %}Zahl{% else %}Ganzzahl{% endif %}.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+<!-- Here you can explain how it can be used in development. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Wie es verwendet werden kann:</strong>
+    <i>Im täglichen Leben, um die optimale Kombination zu finden.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+        <li><i>der Preis ist immer {% if is_js %}Zahl{% else %}ganze Zahl{% endif %};</i></li>
+        <li><i>der Flugplan enthält mindestens ein Element;</i></li>
+        <li><i>beide Städte sind im Flugplan enthalten.</i></li>
+    </ul>
+</p>
+
